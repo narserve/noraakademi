@@ -3,29 +3,78 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">  
   <title>Nora Akademi</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">  
 
   <style>
     *{margin: 0; padding: 0; box-sizing: border-box;}
-    html, body{ min-height: 100vh; }
+    html, body{ min-height: 100vh;  overflow-x: hidden; }
     body{
       display: flex;
       flex-direction: column;
       align-items: center;
-      /* justify-content: center; */
+
+      font-family: 'Roboto', sans-serif;
+      font-weight: 100;
+      line-height: 24px;
     }
-    #header{
-      /*width: 100%;*/
+
+    h2{
+      font-weight: 400;
+    }
+    
+    #iletisim{
+      text-align: center;
+      padding: 24px;
+    }
+
+
+    @media only screen and (max-width: 575px) {
+      #header{
+        zoom: 0.6;
+      }
     }
     
   </style>
 </head>
 <body>
 
-  <a href = "mailto:info@noraakademi.com">
-    <img id="header" src="./header.jpg"/>
-  </a>
+
+  <div style="margin: 24px; text-align: center;">
+    web sitemiz yenileniyor<br/>
+    çok yakında hizmetinizdeyiz
+  </div>
+
+  <!-- <a href = "mailto:info@noraakademi.com">
+  </a> -->
+    <img id="header" src="./header.jpg">
+
+
+    <h1 style="display: none;">Nora Akademi</h1>
+
+    <div id="iletisim">
+
+      <h3 style="margin: 24px 24px 6px;">Telefon</h3>
+      <div>
+        0537 221 69 82<br/>
+        0554 130 16 05
+      </div>
+      
+      <h3 style="margin: 24px 24px 6px;">E-Eail</h3>
+      <div>
+        info@noraakademi.com<br/>
+        noraakademi@gmail.com
+      </div>
+      
+      <h3 style="margin: 24px 24px 6px;">Adres</h3>
+      <div>Nazım Hikmet Bulv. Barbaros Hayrettin Paşa Mh. No:84 D:165 Newista Residance, Beylikdüzü, İstanbul</div>
+
+    </div>
 
   
   
